@@ -1,5 +1,9 @@
-nav ul{
+nav>ul{
     display: flex;
+    
+    
+}
+ul li{
     width: fit-content;
     background: rgba(145, 255, 141, 0.444);
     padding: 0%;
@@ -13,4 +17,18 @@ nav ul li:hover{
 }
 nav ul li a{
     text-decoration: none;
+}
+
+/* css for dropdown nav  */
+
+nav>ul>li>ul{
+    position: absolute;
+}
+nav ul li ul li{
+    display: none;
+    margin-left:-52px;
+}
+nav ul li:hover ul li{
+    display: block;
+    
 }
