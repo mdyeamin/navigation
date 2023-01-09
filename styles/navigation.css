@@ -1,5 +1,6 @@
 nav>ul{
     display: flex;
+    position: relative;
     
     
 }
@@ -22,7 +23,7 @@ nav ul li a{
 /* css for dropdown nav  */
 
 nav>ul>li>ul{
-    position: absolute;
+    position: absolute; margin-top: 8px;
 }
 nav ul li ul li{
     display: none;
@@ -31,4 +32,17 @@ nav ul li ul li{
 nav ul li:hover ul li{
     display: block;
     
+}
+
+/* nested navigation */
+nav>ul>li>ul>li>ul{
+    position: absolute;
+}
+nav ul li ul li ul{
+    display: none;
+    
+}
+nav ul li ul li:hover ul{
+    display: inline-block;
+    margin-left: 24px;
 }
